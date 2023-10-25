@@ -62,7 +62,7 @@ begin
 	for i:=1 to N do
 	begin
 		min:=i;
-		for j:=i+1 to (N-1) do
+		for j:=i+1 to (N) do
 		begin
 			if (a[j]<a[min]) then
 			begin
@@ -77,7 +77,7 @@ begin
 end;
 
 begin
-	writeln('Ingrese tamaño:');
+	writeln('Ingrese tamanio:');
 	readln(N);
 	Lectura(a, N);
 	seleccion(a, N);	
